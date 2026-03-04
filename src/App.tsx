@@ -93,7 +93,7 @@ export default function App() {
               <div className="p-5 space-y-5">
                 <div className="text-center border-b border-stone-800 pb-4">
                   <h3 className="text-2xl font-bold text-stone-100 mb-1">석무열</h3>
-                  <p className="text-stone-400 text-sm">25세 · 백련의 가주 · 의붓 남동생</p>
+                  <p className="text-stone-400 text-sm">26세 · 백련의 가주 · 의붓 남동생</p>
                 </div>
                 
                 <div className="space-y-3 text-sm">
