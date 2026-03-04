@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Serif+KR:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Noto Serif KR", "Gowun Batang", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+body {
+  background-color: #1c1917; /* stone-900 */
+  color: #e7e5e4; /* stone-200 */
+  font-family: var(--font-serif);
+}
+
+.glass-panel {
+  background: rgba(41, 37, 36, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(120, 113, 108, 0.2);
+}
