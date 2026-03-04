@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Scroll, Users, BookOpen, Shield, Sparkles, MessageSquare, Feather, Compass } from 'lucide-react';
+import { Scroll, Users, BookOpen, Shield, Sparkles, MessageSquare, Feather, Compass, Zap } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<'worldview' | 'characters' | 'commands'>('worldview');
@@ -291,6 +291,62 @@ export default function App() {
                 <p className="text-stone-300 relative z-10">
                   단단한 팔이 망설임 없이 도화를 품에 안아 옭아맨 순간, 곁을 지키던 무열의 시리도록 푸른 눈동자가 유리 파편처럼 날카롭게 깨어져 나간다. 천 년을 기다린 신과 목숨을 바쳐 지켜온 필멸자, 두 북부의 주인이 마침내 한자리에서 격돌하는 서막이 오른다.
                 </p>
+              </div>
+            </div>
+
+            {/* 돌발 사건 */}
+            <div className="pt-8">
+              <div className="flex items-center gap-2 border-b border-stone-800 pb-2 mb-4">
+                <Zap className="w-5 h-5 text-stone-400" />
+                <h2 className="text-xl font-semibold text-stone-200">돌발 사건 (!돌발)</h2>
+              </div>
+              
+              <div className="space-y-4">
+                <p className="text-stone-400 text-sm leading-relaxed">
+                  평화로운 일상에 지루함을 느낄 때 입력해 보세요. 세계관을 기반으로 한 뜬금없고 소란스러운 일회성 사건이 즉시 발동되어 로코적 재미를 더합니다. <span className="text-stone-500 text-xs">(※ 🔞 상황에서는 등장하지 않습니다.)</span>
+                </p>
+
+                <div className="grid gap-3">
+                  <div className="bg-stone-900/50 border border-stone-800 rounded-lg p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="bg-stone-800 text-stone-300 px-2 py-0.5 rounded text-xs font-mono">유형 1</span>
+                      <strong className="text-stone-300 text-sm">행사 예고</strong>
+                    </div>
+                    <p className="text-stone-400 text-xs leading-relaxed">
+                      백련국 북부 온천장 연합에서 주최하는 '제1회 흑돼지 얼음 썰매 대회'가 개최됨. 우승 상품으로 '현무의 축복이 담긴(거짓) 온천수 100독'이 걸려, 벽랑의 상인들과 봉명의 귀족들까지 몰려들어 수도 현령이 마비되는 소동이 벌어짐.
+                    </p>
+                  </div>
+
+                  <div className="bg-stone-900/50 border border-stone-800 rounded-lg p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="bg-stone-800 text-stone-300 px-2 py-0.5 rounded text-xs font-mono">유형 2</span>
+                      <strong className="text-stone-300 text-sm">긴장감 넘치는 사건</strong>
+                    </div>
+                    <p className="text-stone-400 text-xs leading-relaxed">
+                      타대륙 사신 '가라한(可羅汗)'이 바친 진귀한 맹수 '사자'가 우리를 탈출함. 하필 도화의 처소 근처로 향해 무열이 창을 들고 뛰쳐나가고 현결이 물기둥을 세우며 일촉즉발의 상황이 벌어지나, 정작 사자는 도화의 체향에 취해 배를 까뒤집고 골골대고 있음.
+                    </p>
+                  </div>
+
+                  <div className="bg-stone-900/50 border border-stone-800 rounded-lg p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="bg-stone-800 text-stone-300 px-2 py-0.5 rounded text-xs font-mono">유형 3</span>
+                      <strong className="text-stone-300 text-sm">모브 NPC 등장</strong>
+                    </div>
+                    <p className="text-stone-400 text-xs leading-relaxed">
+                      청류 가문의 방계 귀족 '리청운(李靑雲)'이 도화의 소문을 듣고 무작정 백련의 성문 앞까지 찾아와 자작시를 읊으며 구애함. 이를 본 평민 시종 '마루'가 기겁하며 빗자루로 쫓아내려 하고, 무열의 심기가 바닥을 쳐 성문 일대에 한파가 몰아침.
+                    </p>
+                  </div>
+
+                  <div className="bg-stone-900/50 border border-stone-800 rounded-lg p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="bg-stone-800 text-stone-300 px-2 py-0.5 rounded text-xs font-mono">유형 4</span>
+                      <strong className="text-stone-300 text-sm">이상한 재해 발생</strong>
+                    </div>
+                    <p className="text-stone-400 text-xs leading-relaxed">
+                      백련국 수도 현령 한가운데 위치한 명물 '백련지(白蓮池)'에 천 년 만에 깨어난 전설의 신수 '온천불가사리'가 자리를 잡고 연못물을 전부 빨아들임. 쭈글쭈글해진 불가사리를 빼내기 위해 백련의 가신들이 총동원되어 밧줄 당기기를 하는 진풍경이 벌어짐.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
