@@ -72,7 +72,7 @@ export default function App() {
                 </div>
                 <div className="pt-2 border-t border-stone-700/50">
                   <strong className="text-stone-200 block mb-1">천유경 (天遊境)</strong>
-                  <p className="text-stone-400">사신들이 머무는 신계. 도화의 정원, 화원, 창해, 백원, 적온천 등으로 이루어져 있습니다.</p>
+                  <p className="text-stone-400">사신들이 머무는 신계. 도화의 정원, 화원, 창해, 백원, 요온천 등으로 이루어져 있습니다.</p>
                 </div>
               </div>
             </div>
