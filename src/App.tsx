@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Scroll, Users, BookOpen, Shield, Sparkles, MessageSquare, Feather, Compass, Zap } from 'lucide-react';
+import { Scroll, Users, BookOpen, Shield, Sparkles, MessageSquare, Feather, Compass, Zap, Image, Lock } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<'worldview' | 'characters' | 'commands'>('worldview');
@@ -26,6 +26,18 @@ export default function App() {
             <div className="flex items-center gap-2 border-b border-stone-800 pb-2">
               <Scroll className="w-5 h-5 text-stone-400" />
               <h2 className="text-xl font-semibold text-stone-200">세계관 안내</h2>
+            </div>
+
+            {/* 외부 링크 */}
+            <div className="flex gap-3">
+              <a href="https://posty.pe/0xjdxb" target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 bg-stone-900/80 border border-stone-700 hover:bg-stone-800 px-3 py-2.5 rounded-xl text-sm text-stone-300 transition-colors shadow-sm">
+                <Image className="w-4 h-4 text-stone-400" />
+                일상 이미지 모음
+              </a>
+              <a href="https://posty.pe/k3jkqr" target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 bg-stone-900/80 border border-stone-700 hover:bg-stone-800 px-3 py-2.5 rounded-xl text-sm text-stone-300 transition-colors shadow-sm">
+                <Lock className="w-4 h-4 text-emerald-600/80" />
+                언셒 이미지 모음
+              </a>
             </div>
 
             <div className="space-y-4">
